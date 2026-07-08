@@ -53,8 +53,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            /* Changed 'cover' to 'contain' to force the full image to show without cropping */
             background: linear-gradient(rgba(6, 78, 59, 0.4), rgba(6, 78, 59, 0.7)), 
-                        url('https://drive.google.com/thumbnail?id=1XHCwaeoCibTE1s61-LifYGxgEksSCumZ&sz=w1920') center 60%/cover no-repeat;
+                        url('https://drive.google.com/thumbnail?id=1XHCwaeoCibTE1s61-LifYGxgEksSCumZ&sz=w1920') center center/contain no-repeat;
+            background-color: #1a3322; /* Matches the dark green tone of your photo for any empty spaces */
             color: white;
             padding: 20px;
         }
