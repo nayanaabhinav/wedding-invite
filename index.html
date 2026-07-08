@@ -78,58 +78,6 @@
             text-transform: uppercase;
         }
 
-        /* Couples Section with AI Portraits */
-        .couple-section {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .couple-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 40px;
-            gap: 30px;
-        }
-
-        .profile-card {
-            flex: 1;
-            min-width: 280px;
-            max-width: 350px;
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border: 1px solid rgba(180, 83, 9, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .profile-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .profile-card img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .profile-card h3 {
-            color: var(--primary);
-            font-size: 1.8rem;
-            margin-bottom: 5px;
-        }
-
-        .ampersand {
-            font-size: 3rem;
-            color: var(--secondary);
-            align-self: center;
-        }
-
         /* Countdown Section */
         .countdown-section {
             background-color: var(--primary);
@@ -158,7 +106,7 @@
             font-size: 2.5rem;
             font-weight: bold;
             font-family: 'Cinzel', serif;
-            color: var(--secondary);
+            color: #e5c158;
         }
 
         /* Events Section */
@@ -237,7 +185,6 @@
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
-            .ampersand { transform: rotate(90deg); margin: 10px 0; }
             .countdown-container { gap: 10px; }
             .countdown-box { min-width: 70px; padding: 10px; }
             .countdown-box span { font-size: 1.8rem; }
@@ -251,28 +198,6 @@
         <h2>Are Together Welcoming You To Their Wedding</h2>
         <h1>Nayana & Abhinav</h1>
         <p>August 23, 2026</p>
-    </section>
-
-    <!-- Couple Portraits Section -->
-    <section class="couple-section">
-        <h2>The Happy Couple</h2>
-        <div class="couple-container">
-            <div class="profile-card">
-                <!-- Sample AI Traditional Bride Portrait Placeholder -->
-                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=600" alt="Bride Nayana">
-                <h3>Nayana</h3>
-                <p>The Beautiful Bride</p>
-            </div>
-            
-            <div class="ampersand">&</div>
-            
-            <div class="profile-card">
-                <!-- Sample AI Traditional Groom Portrait Placeholder -->
-                <img src="https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?q=80&w=600" alt="Groom Abhinav">
-                <h3>Abhinav</h3>
-                <p>The Handsome Groom</p>
-            </div>
-        </div>
     </section>
 
     <!-- Countdown Section -->
