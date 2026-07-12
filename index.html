@@ -14,8 +14,8 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #faf8f5; 
-            color: #332c25;
+            background-color: #fdfcf9; /* True luxury off-white/ivory */
+            color: #2b2d30; /* Clean dark neutral slate for modern contrast */
             text-align: center;
             line-height: 1.6;
         }
@@ -35,7 +35,8 @@
             align-items: center;
             padding: 20px;
             color: #ffffff;
-            background: linear-gradient(rgba(36, 30, 24, 0.45), rgba(36, 30, 24, 0.7)), 
+            /* Balanced dimming overlay to let the photo pop while keeping white text legible */
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
                         url('https://drive.google.com/uc?export=view&id=1MUzci1iWLm-cRn2gMSZuhVQQNo5h2Ohe') center top 20%/cover no-repeat;
         }
 
@@ -44,14 +45,14 @@
             text-transform: uppercase;
             font-weight: 400;
             margin-bottom: 15px;
-            color: #f1eae1;
+            color: #f6ebd6; /* Champagne tinted white */
         }
 
         .hero h1 {
             font-size: 3.2rem;
             margin: 15px 0;
             font-weight: 600;
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
@@ -62,12 +63,12 @@
             font-weight: 300;
         }
 
-        /* Champagne Gold Ribbon Countdown */
+        /* Bright Polished Gold Ribbon Countdown */
         .countdown-section {
-            background: linear-gradient(135deg, #c59b27 0%, #a37a1a 100%);
+            background: linear-gradient(135deg, #e5b842 0%, #d4a326 50%, #b88713 100%); /* Radiant, bright metallic gold scale */
             color: #ffffff;
             padding: 50px 20px;
-            box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .countdown-section h2 {
@@ -75,6 +76,8 @@
             font-weight: 400;
             margin-bottom: 25px;
             text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
 
         .countdown-container {
@@ -87,11 +90,12 @@
 
         .countdown-box {
             flex: 1;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.2);
             padding: 15px 10px;
             border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
         .countdown-box span {
@@ -105,9 +109,10 @@
         .countdown-label {
             font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             margin-top: 5px;
-            opacity: 0.9;
+            font-weight: 500;
+            color: #ffffff;
         }
 
         /* Event Cards Grid Layout */
@@ -119,7 +124,7 @@
 
         .events-section h2 {
             font-size: 2rem;
-            color: #8c6919;
+            color: #b88713; /* Polished gold accent header */
             margin-bottom: 40px;
             position: relative;
         }
@@ -128,8 +133,8 @@
             content: '';
             display: block;
             width: 60px;
-            height: 2px;
-            background: #c59b27;
+            height: 1.5px;
+            background: #d4a326;
             margin: 15px auto 0 auto;
         }
 
@@ -144,20 +149,21 @@
             background: #ffffff;
             padding: 40px 30px;
             border-radius: 12px;
-            border: 1px solid #eae3d5;
-            box-shadow: 0 8px 24px rgba(197, 155, 39, 0.05);
+            border: 1px solid #f2edd8; /* Soft golden-ivory card borders */
+            box-shadow: 0 10px 30px rgba(212, 163, 38, 0.06); /* Highly subtle gold ambient shadow */
             flex: 1;
             min-width: 300px;
             max-width: 480px;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .event-card:hover {
             transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(212, 163, 38, 0.12);
         }
 
         .event-card h3 {
-            color: #a37a1a;
+            color: #d4a326;
             font-size: 1.6rem;
             margin-bottom: 20px;
         }
@@ -174,22 +180,21 @@
         }
 
         .event-details p strong {
-            color: #615343;
+            color: #45494e;
             font-weight: 500;
         }
 
         .address-sub {
             font-size: 0.8rem !important;
-            color: #887d70;
+            color: #787e87;
             margin-top: 4px;
-            padding-left: 0px;
         }
 
-        /* Elegant Luxury Style Buttons */
+        /* Clean Golden Finish Interactive Buttons */
         .btn {
             display: inline-block;
             padding: 12px 28px;
-            background: #a37a1a;
+            background: #d4a326;
             color: #ffffff;
             text-decoration: none;
             border-radius: 4px;
@@ -197,33 +202,36 @@
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border: 1px solid #a37a1a;
+            border: 1px solid #d4a326;
             margin: 8px 4px;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(214, 163, 38, 0.2);
         }
 
         .btn:hover {
             background: transparent;
-            color: #a37a1a;
+            color: #d4a326;
+            box-shadow: none;
         }
 
         .btn-secondary {
             background: transparent;
-            color: #8c6919;
-            border: 1px solid #c59b27;
+            color: #b88713;
+            border: 1px solid #d4a326;
+            box-shadow: none;
         }
 
         .btn-secondary:hover {
-            background: #c59b27;
+            background: #d4a326;
             color: #ffffff;
-            border-color: #c59b27;
+            border-color: #d4a326;
         }
 
-        /* Footer */
+        /* Luxury Matte Off-White/Charcoal Footer */
         footer {
-            background: #1e1a16;
-            color: #a69c91;
-            padding: 40px 20px;
+            background: #191b1c; /* Soft charcoal-black to make the overall site look high-end */
+            color: #cdd2d7;
+            padding: 50px 20px;
             font-size: 0.85rem;
             letter-spacing: 1px;
         }
@@ -312,7 +320,7 @@
 
     <footer>
         <p>We await your presence to bless our new journey.</p>
-        <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 10px;">&copy; 2026 Nayana & Abhinav</p>
+        <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 10px;">&copy; 2026 Nayana & Abhinav</p>
     </footer>
 
     <!-- Countdown Timer Script -->
