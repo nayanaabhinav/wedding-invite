@@ -6,19 +6,6 @@
     <title>Nayana & Abhinav Wedding Invitation</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* THEME STYLES: Off-White & Gold Theme (Active)
-        */
-
-        :root {
-            --primary: #b45309; /* Deep Warm Gold */
-            --secondary: #d97706; /* Accent Gold */
-            --accent: #f59e0b; /* Bright Gold */
-            --bg: #fdfbf7; /* Off-white / Cream Ivory */
-            --card-bg: #ffffff; /* Pure White for Cards */
-            --text: #2c2520; /* Deep Charcoal Brown for readable, soft text */
-            --gold-gradient: linear-gradient(135deg, #b45309 0%, #d97706 100%);
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -27,32 +14,330 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
+            background-color: #faf8f5; 
+            color: #332c25;
             text-align: center;
-            overflow-x: hidden;
+            line-height: 1.6;
         }
 
-        h1, h2, h3, .script-font {
+        h1, h2, h3 {
             font-family: 'Cinzel', serif;
-            letter-spacing: 2px;
-            color: var(--text);
+            letter-spacing: 3px;
         }
 
-        /* Hero Section */
-         .hero {
+        /* Hero Splash Banner */
+        .hero {
+            position: relative;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* Changed overlay to a soft warm gold/brown tint to complement the image */
-            background: linear-gradient(rgba(44, 37, 32, 0.4), rgba(44, 37, 32, 0.65)), 
-                        url(https://drive.google.com/uc?export=view&id=1MUzci1iWLm-cRn2gMSZuhVQQNo5h2Ohe) center top 20%/cover no-repeat;           
-            color: white;
             padding: 20px;
+            color: #ffffff;
+            background: linear-gradient(rgba(36, 30, 24, 0.45), rgba(36, 30, 24, 0.7)), 
+                        url('https://drive.google.com/uc?export=view&id=1MUzci1iWLm-cRn2gMSZuhVQQNo5h2Ohe') center top 20%/cover no-repeat;
         }
 
         .hero h2 {
-            font-size: 1.5rem;
-            text
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #f1eae1;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin: 15px 0;
+            font-weight: 600;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ffffff;
+            font-weight: 300;
+        }
+
+        /* Champagne Gold Ribbon Countdown */
+        .countdown-section {
+            background: linear-gradient(135deg, #c59b27 0%, #a37a1a 100%);
+            color: #ffffff;
+            padding: 50px 20px;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .countdown-section h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .countdown-box {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+        }
+
+        .countdown-box span {
+            display: block;
+            font-size: 2.2rem;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .countdown-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* Event Cards Grid Layout */
+        .events-section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .events-section h2 {
+            font-size: 2rem;
+            color: #8c6919;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .events-section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: #c59b27;
+            margin: 15px auto 0 auto;
+        }
+
+        .events-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .event-card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #eae3d5;
+            box-shadow: 0 8px 24px rgba(197, 155, 39, 0.05);
+            flex: 1;
+            min-width: 300px;
+            max-width: 480px;
+            transition: transform 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .event-card h3 {
+            color: #a37a1a;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        .event-details {
+            margin-bottom: 30px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .event-details p {
+            margin: 8px 0;
+            font-size: 0.95rem;
+        }
+
+        .event-details p strong {
+            color: #615343;
+            font-weight: 500;
+        }
+
+        .address-sub {
+            font-size: 0.8rem !important;
+            color: #887d70;
+            margin-top: 4px;
+            padding-left: 0px;
+        }
+
+        /* Elegant Luxury Style Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #a37a1a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid #a37a1a;
+            margin: 8px 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: #a37a1a;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #8c6919;
+            border: 1px solid #c59b27;
+        }
+
+        .btn-secondary:hover {
+            background: #c59b27;
+            color: #ffffff;
+            border-color: #c59b27;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e1a16;
+            color: #a69c91;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.3rem; }
+            .hero h2 { font-size: 1rem; }
+            .countdown-container { max-width: 90%; }
+            .countdown-box span { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Are Together Welcoming You To Their Wedding</h2>
+        <h1>Nayana & Abhinav</h1>
+        <p>August 23, 2026</p>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <h2>Counting Down To The Big Day</h2>
+        <div class="countdown-container">
+            <div class="countdown-box">
+                <span id="days">00</span>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-box">
+                <span id="hours">00</span>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-box">
+                <span id="minutes">00</span>
+                <div class="countdown-label">Mins</div>
+            </div>
+            <div class="countdown-box">
+                <span id="seconds">00</span>
+                <div class="countdown-label">Secs</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Venues Section -->
+    <section class="events-section">
+        <h2>Wedding Events</h2>
+        <div class="events-grid">
+            
+            <!-- Muhurtham Card -->
+            <div class="event-card">
+                <h3>Wedding Muhurtham</h3>
+                <div class="event-details">
+                    <p><strong>Date:</strong> Sunday, 23rd August 2026</p>
+                    <p><strong>Time:</strong> 10:30 AM - 11:30 AM</p>
+                    <p><strong>Venue:</strong> Meenakshi Mahal</p>
+                    <p class="address-sub">PPJG+97P, Polpully, Kerala 678552</p>
+                </div>
+                <div>
+                    <a href="https://maps.google.com/?q=Meenakshi+Mahal+Polpully+Kerala" target="_blank" class="btn">View Map</a>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nayana+%26+Abhinav+Wedding+Muhurtham&dates=20260823T050000Z/20260823T060000Z&details=Wedding+Muhurtham+of+Nayana+and+Abhinav&location=Meenakshi+Mahal,+Polpully,+Kerala+678552" target="_blank" class="btn btn-secondary">Add to Calendar</a>
+                </div>
+            </div>
+
+            <!-- Reception Card -->
+            <div class="event-card">
+                <h3>Wedding Reception</h3>
+                <div class="event-details">
+                    <p><strong>Date:</strong> Sunday, 23rd August 2026</p>
+                    <p><strong>Time:</strong> 05:00 PM Onwards</p>
+                    <p><strong>Venue:</strong> Mohamed Bagh Event Centre</p>
+                    <p class="address-sub">Sulaiman Sahib Rd, opposite Elegant Public School, behind Mangalam Towers, Valakkad, Palakkad, Kerala 678014</p>
+                </div>
+                <div>
+                    <a href="https://maps.google.com/?q=Mohamed+Bagh+Event+Centre+Palakkad" target="_blank" class="btn">View Map</a>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Nayana+%26+Abhinav+Wedding+Reception&dates=20260823T113000Z/20260823T153000Z&details=Wedding+Reception+of+Nayana+and+Abhinav&location=Mohamed+Bagh+Event+Centre,+Valakkad,+Palakkad,+Kerala+678014" target="_blank" class="btn btn-secondary">Add to Calendar</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>We await your presence to bless our new journey.</p>
+        <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 10px;">&copy; 2026 Nayana & Abhinav</p>
+    </footer>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        const weddingDate = new Date("August 23, 2026 10:30:00").getTime();
+
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(timer);
+                document.querySelector(".countdown-container").innerHTML = "<h3 style='color: white;'>The Celebration Has Begun!</h3>";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
