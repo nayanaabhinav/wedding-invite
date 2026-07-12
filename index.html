@@ -14,8 +14,8 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #fdfcf9; /* True luxury off-white/ivory */
-            color: #2b2d30; /* Clean dark neutral slate for modern contrast */
+            background-color: #faf9f5; /* Premium off-white / ivory canvas */
+            color: #2c302e; /* Soft rich charcoal text */
             text-align: center;
             line-height: 1.6;
         }
@@ -23,6 +23,7 @@
         h1, h2, h3 {
             font-family: 'Cinzel', serif;
             letter-spacing: 3px;
+            color: #2c302e;
         }
 
         /* Hero Splash Banner */
@@ -35,8 +36,7 @@
             align-items: center;
             padding: 20px;
             color: #ffffff;
-            /* Balanced dimming overlay to let the photo pop while keeping white text legible */
-            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), 
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55)), 
                         url('https://drive.google.com/uc?export=view&id=1MUzci1iWLm-cRn2gMSZuhVQQNo5h2Ohe') center top 20%/cover no-repeat;
         }
 
@@ -45,14 +45,15 @@
             text-transform: uppercase;
             font-weight: 400;
             margin-bottom: 15px;
-            color: #f6ebd6; /* Champagne tinted white */
+            color: #f7f4eb;
         }
 
         .hero h1 {
             font-size: 3.2rem;
             margin: 15px 0;
             font-weight: 600;
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         .hero p {
@@ -63,21 +64,21 @@
             font-weight: 300;
         }
 
-        /* Bright Polished Gold Ribbon Countdown */
+        /* Minimalist Off-White & Gold Accent Countdown */
         .countdown-section {
-            background: linear-gradient(135deg, #e5b842 0%, #d4a326 50%, #b88713 100%); /* Radiant, bright metallic gold scale */
-            color: #ffffff;
-            padding: 50px 20px;
-            box-shadow: inset 0 2px 8px rgba(0,0,0,0.08);
+            background-color: #fcfbfa; /* Slightly lighter off-white highlight block */
+            color: #2c302e;
+            padding: 60px 20px;
+            border-bottom: 1px solid #eadecc;
         }
 
         .countdown-section h2 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 400;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             text-transform: uppercase;
             letter-spacing: 4px;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            color: #a88944; /* Clean gold color for headings */
         }
 
         .countdown-container {
@@ -90,20 +91,19 @@
 
         .countdown-box {
             flex: 1;
-            background: rgba(255, 255, 255, 0.2);
+            background: #ffffff;
             padding: 15px 10px;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(5px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            border: 1px solid #eadecc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
         }
 
         .countdown-box span {
             display: block;
             font-size: 2.2rem;
             font-family: 'Cinzel', serif;
-            font-weight: 700;
-            color: #ffffff;
+            font-weight: 600;
+            color: #ba964c;
         }
 
         .countdown-label {
@@ -112,19 +112,19 @@
             letter-spacing: 1.5px;
             margin-top: 5px;
             font-weight: 500;
-            color: #ffffff;
+            color: #707571;
         }
 
-        /* Event Cards Grid Layout */
+        /* Event Cards Section */
         .events-section {
-            padding: 80px 20px;
+            padding: 90px 20px;
             max-width: 1100px;
             margin: 0 auto;
         }
 
         .events-section h2 {
             font-size: 2rem;
-            color: #b88713; /* Polished gold accent header */
+            color: #2c302e;
             margin-bottom: 40px;
             position: relative;
         }
@@ -132,106 +132,108 @@
         .events-section h2::after {
             content: '';
             display: block;
-            width: 60px;
-            height: 1.5px;
-            background: #d4a326;
+            width: 50px;
+            height: 1px;
+            background: #ba964c;
             margin: 15px auto 0 auto;
         }
 
         .events-grid {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 35px;
             flex-wrap: wrap;
         }
 
         .event-card {
             background: #ffffff;
-            padding: 40px 30px;
-            border-radius: 12px;
-            border: 1px solid #f2edd8; /* Soft golden-ivory card borders */
-            box-shadow: 0 10px 30px rgba(212, 163, 38, 0.06); /* Highly subtle gold ambient shadow */
+            padding: 45px 35px;
+            border-radius: 8px;
+            border: 1px solid #eadecc;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
             flex: 1;
             min-width: 300px;
             max-width: 480px;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
         .event-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 35px rgba(212, 163, 38, 0.12);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(186, 150, 76, 0.08);
+            border-color: #ba964c;
         }
 
         .event-card h3 {
-            color: #d4a326;
-            font-size: 1.6rem;
-            margin-bottom: 20px;
+            color: #ba964c;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
 
         .event-details {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             text-align: left;
             display: inline-block;
         }
 
         .event-details p {
-            margin: 8px 0;
+            margin: 10px 0;
             font-size: 0.95rem;
+            color: #4a504d;
         }
 
         .event-details p strong {
-            color: #45494e;
+            color: #2c302e;
             font-weight: 500;
         }
 
         .address-sub {
-            font-size: 0.8rem !important;
-            color: #787e87;
-            margin-top: 4px;
+            font-size: 0.85rem !important;
+            color: #7b827e;
+            margin-top: 6px;
+            line-height: 1.5;
         }
 
-        /* Clean Golden Finish Interactive Buttons */
+        /* Clean Finish Buttons */
         .btn {
             display: inline-block;
             padding: 12px 28px;
-            background: #d4a326;
+            background: #ba964c;
             color: #ffffff;
             text-decoration: none;
             border-radius: 4px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            border: 1px solid #d4a326;
+            letter-spacing: 1.5px;
+            border: 1px solid #ba964c;
             margin: 8px 4px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(214, 163, 38, 0.2);
+            transition: all 0.25s ease;
         }
 
         .btn:hover {
             background: transparent;
-            color: #d4a326;
-            box-shadow: none;
+            color: #ba964c;
         }
 
         .btn-secondary {
             background: transparent;
-            color: #b88713;
-            border: 1px solid #d4a326;
-            box-shadow: none;
+            color: #707571;
+            border: 1px solid #ccbfb0;
         }
 
         .btn-secondary:hover {
-            background: #d4a326;
+            background: #ba964c;
             color: #ffffff;
-            border-color: #d4a326;
+            border-color: #ba964c;
         }
 
-        /* Luxury Matte Off-White/Charcoal Footer */
+        /* Off-White Minimal Footer */
         footer {
-            background: #191b1c; /* Soft charcoal-black to make the overall site look high-end */
-            color: #cdd2d7;
-            padding: 50px 20px;
+            background: #f2f0eb; /* Light clean off-white block */
+            border-top: 1px solid #eadecc;
+            color: #5c615e;
+            padding: 60px 20px;
             font-size: 0.85rem;
             letter-spacing: 1px;
         }
@@ -320,7 +322,7 @@
 
     <footer>
         <p>We await your presence to bless our new journey.</p>
-        <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 10px;">&copy; 2026 Nayana & Abhinav</p>
+        <p style="font-size: 0.75rem; opacity: 0.6; margin-top: 15px;">&copy; 2026 Nayana & Abhinav</p>
     </footer>
 
     <!-- Countdown Timer Script -->
@@ -343,7 +345,7 @@
 
             if (distance < 0) {
                 clearInterval(timer);
-                document.querySelector(".countdown-container").innerHTML = "<h3 style='color: white;'>The Celebration Has Begun!</h3>";
+                document.querySelector(".countdown-container").innerHTML = "<h3 style='color: #ba964c;'>The Celebration Has Begun!</h3>";
             }
         }, 1000);
     </script>
