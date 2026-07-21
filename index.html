@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nayana & Abhinav Wedding Invitation</title>
 
-    <!-- ===== WHATSAPP & SOCIAL MEDIA PREVIEW TAGS ===== -->
+    <!-- ===== WHATSAPP & OPEN GRAPH PREVIEW METADATA ===== -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nayanaabhinav.github.io/wedding-invite/" />
     <meta property="og:title" content="Nayana & Abhinav Wedding Invitation" />
     <meta property="og:description" content="We await your presence to bless our new journey on August 23, 2026." />
     
-    <!-- Direct link to image hosted on GitHub Pages -->
-    <meta property="og:image" content="https://nayanaabhinav.github.io/wedding-invite/preview.jpg" />
-    <meta property="og:image:secure_url" content="https://nayanaabhinav.github.io/wedding-invite/preview.jpg" />
+    <!-- Google User Content direct image link with WhatsApp crawler resolution parameters -->
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1sV7raQQtenL_7PGTzapi9kPNGNyuxSR4=w1200-h630-p" />
+    <meta property="og:image:secure_url" content="https://lh3.googleusercontent.com/d/1sV7raQQtenL_7PGTzapi9kPNGNyuxSR4=w1200-h630-p" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <!-- ===== TWITTER CARD TAGS (Parsed by WhatsApp crawler) ===== -->
+    <!-- ===== TWITTER CARD FALLBACK TAGS ===== -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Nayana & Abhinav Wedding Invitation" />
     <meta name="twitter:description" content="We await your presence to bless our new journey on August 23, 2026." />
-    <meta name="twitter:image" content="https://nayanaabhinav.github.io/wedding-invite/preview.jpg" />
+    <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1sV7raQQtenL_7PGTzapi9kPNGNyuxSR4=w1200-h630-p" />
 
     <!-- Google Fonts - Cinzel & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,8 +49,7 @@
             --border-radius: 16px;
         }
 
-        html,
-        body {
+        html, body {
             height: 100%;
             width: 100%;
             overflow-x: hidden;
@@ -63,7 +62,7 @@
             line-height: 1.6;
         }
 
-        /* ===== HERO SECTION - FULL SCREEN ===== */
+        /* ===== HERO SECTION ===== */
         .hero-section {
             min-height: 100vh;
             width: 100%;
@@ -75,28 +74,20 @@
             padding: 20px 20px 80px 20px; 
             background-color: var(--primary-navy); 
             background-image: url('https://lh3.googleusercontent.com/d/1MUzci1iWLm-cRn2gMSZuhVQQNo5h2Ohe'); 
-            
-            /* ===== 140% ZOOM ADJUSTMENT ===== */
             background-size: 140%; 
             background-position: center 30%; 
-            
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
 
-        /* ===== DARK OVERLAY ===== */
         .hero-section::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(0, 0, 0, 0.45); 
             z-index: 0;
         }
 
-        /* Hero content */
         .hero-content {
             max-width: 900px;
             position: relative;
@@ -219,19 +210,14 @@
         .countdown-box::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             height: 4px;
             background: linear-gradient(90deg, var(--primary-gold), var(--primary-navy));
             opacity: 0;
             transition: opacity 0.3s ease;
         }
 
-        .countdown-box:hover::before {
-            opacity: 1;
-        }
-
+        .countdown-box:hover::before { opacity: 1; }
         .countdown-box:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: var(--shadow-md);
@@ -306,19 +292,14 @@
         .event-card::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             height: 5px;
             background: linear-gradient(90deg, var(--primary-gold), var(--primary-navy));
             opacity: 0;
             transition: opacity 0.4s ease;
         }
 
-        .event-card:hover::before {
-            opacity: 1;
-        }
-
+        .event-card:hover::before { opacity: 1; }
         .event-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-md);
@@ -489,62 +470,23 @@
             }
 
             @keyframes fadeInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(10px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(-20px);
-                }
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(-20px); }
             }
 
-            .countdown-container {
-                gap: 15px;
-            }
-
-            .countdown-box {
-                min-width: 80px;
-                padding: 20px 25px;
-            }
-
-            .countdown-box span {
-                font-size: 2.4rem;
-            }
-
-            .event-card {
-                padding: 35px 25px;
-            }
-
-            .event-actions {
-                flex-direction: column;
-            }
-
-            .btn {
-                flex: none;
-                width: 100%;
-            }
+            .countdown-container { gap: 15px; }
+            .countdown-box { min-width: 80px; padding: 20px 25px; }
+            .countdown-box span { font-size: 2.4rem; }
+            .event-card { padding: 35px 25px; }
+            .event-actions { flex-direction: column; }
+            .btn { flex: none; width: 100%; }
         }
 
         @media (max-width: 480px) {
-            .main-title {
-                font-size: 2.4rem;
-                letter-spacing: 6px;
-            }
-
-            .sub-title {
-                font-size: 0.65rem;
-                letter-spacing: 4px;
-            }
-
-            .countdown-box {
-                min-width: 70px;
-                padding: 15px 15px;
-            }
-
-            .countdown-box span {
-                font-size: 2rem;
-            }
+            .main-title { font-size: 2.4rem; letter-spacing: 6px; }
+            .sub-title { font-size: 0.65rem; letter-spacing: 4px; }
+            .countdown-box { min-width: 70px; padding: 15px 15px; }
+            .countdown-box span { font-size: 2rem; }
         }
     </style>
 </head>
