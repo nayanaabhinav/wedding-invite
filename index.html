@@ -11,7 +11,7 @@
     <meta property="og:title" content="Nayana & Abhinav Wedding Invitation" />
     <meta property="og:description" content="We await your presence to bless our new journey on August 23, 2026." />
     
-    <!-- Google User Content landscape scale parameter (=s1200 preserves original landscape aspect ratio) -->
+    <!-- Google User Content landscape scale parameter -->
     <meta property="og:image" content="https://lh3.googleusercontent.com/d/1sV7raQQtenL_7PGTzapi9kPNGNyuxSR4=s1200" />
     <meta property="og:image:secure_url" content="https://lh3.googleusercontent.com/d/1sV7raQQtenL_7PGTzapi9kPNGNyuxSR4=s1200" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -355,6 +355,48 @@
             line-height: 1.7;
         }
 
+        /* ===== GALLERY SECTION ===== */
+        .gallery-section {
+            padding: 60px 20px 90px;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .gallery-card {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(201, 160, 74, 0.15);
+            background: var(--primary-cream);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.04);
+        }
+
         /* ===== BUTTONS ===== */
         .event-actions {
             display: flex;
@@ -468,6 +510,7 @@
             .event-card { padding: 35px 25px; }
             .event-actions { flex-direction: column; }
             .btn { flex: none; width: 100%; }
+            .gallery-card img { height: 260px; }
         }
 
         @media (max-width: 480px) {
@@ -521,8 +564,9 @@
                     <h3>Muhurtham</h3>
                     <div class="event-details">
                         <p><strong>📅 Date:</strong> Sunday, 23rd August 2026</p>
-                        <p><strong>⏰ Time:</strong> Between 10:30 AM &amp; 11:30 AM</p>
-                        <p><strong>📍 Venue:</strong> <span class="venue-name">Meenakshi Mahal, Polpully</span></p>
+                        <p><strong>⏰ Time:</strong> Between 10:30 &amp; 11:30 AM</p>
+                        <p><strong>📍 Venue:</strong> <span class="venue-name">Meenakshi Mahal</span></p>
+                        <p class="address">PPJG+97P, Polpully, Kerala 678552</p>
                     </div>
                     <div class="event-actions">
                         <a href="https://maps.google.com/?q=Meenakshi+Mahal,+PPJG%2B97P,+Polpully,+Kerala+678552" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🗺️ View Map</a>
@@ -530,6 +574,19 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- ===== PHOTO GALLERY SECTION ===== -->
+        <section class="gallery-section">
+            <h2 class="section-title">Memories</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="https://lh3.googleusercontent.com/d/1bTuOZ8mSTZXdBrdVz7DTd9wQA4d8cDGL=s1200" alt="Nayana and Abhinav Photo 1" loading="lazy" />
+                </div>
+                <div class="gallery-card">
+                    <img src="https://lh3.googleusercontent.com/d/1xdPeoOWhrQdIyy8gTnw74H-FYT2WYzOL=s1200" alt="Nayana and Abhinav Photo 2" loading="lazy" />
+                </div>
             </div>
         </section>
 
