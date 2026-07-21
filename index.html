@@ -11,7 +11,6 @@
     <meta property="og:title" content="Nayana & Abhinav Wedding Invitation" />
     <meta property="og:description" content="We await your presence to bless our new journey on August 23, 2026." />
     
-    <!-- Google User Content landscape scale parameter -->
     <meta property="og:image" content="https://lh3.googleusercontent.com/d/1sV7raQQtenL_7PGTzapi9kPNGNyuxSR4=s1200" />
     <meta property="og:image:secure_url" content="https://lh3.googleusercontent.com/d/1sV7raQQtenL_7PGTzapi9kPNGNyuxSR4=s1200" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -62,20 +61,20 @@
             line-height: 1.6;
         }
 
-        /* ===== HERO SECTION ===== */
+        /* ===== HERO SECTION (ALIGNED TO BOTTOM) ===== */
         .hero-section {
             min-height: 100vh;
             width: 100%;
             display: flex;
-            align-items: center;
+            align-items: flex-end; /* Align content to the bottom of the hero photo */
             justify-content: center;
             text-align: center;
             position: relative;
-            padding: 20px 20px 80px 20px; 
+            padding: 20px 20px 60px 20px; /* Padding at bottom */
             background-color: var(--primary-navy); 
             background-image: url('https://lh3.googleusercontent.com/d/1MUzci1iWLm-cRn2gMSZuhVQQNo5h2Ohe'); 
             background-size: 140%; 
-            background-position: center 30%; 
+            background-position: center 20%; 
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
@@ -84,7 +83,7 @@
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.45); 
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%); 
             z-index: 0;
         }
 
@@ -92,20 +91,20 @@
             max-width: 900px;
             position: relative;
             z-index: 1;
-            padding: 40px 50px;
+            padding: 20px 30px;
             background: transparent;
-            transform: translateY(-40px); 
+            transform: none; /* Removed negative Y-transform */
             animation: fadeInUp 1.5s ease forwards;
         }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(10px); 
+                transform: translateY(20px); 
             }
             to {
                 opacity: 1;
-                transform: translateY(-40px);
+                transform: translateY(0);
             }
         }
 
@@ -115,15 +114,15 @@
             font-weight: 500;
             color: var(--white);
             letter-spacing: 12px;
-            text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
-            margin-bottom: 20px;
+            text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+            margin-bottom: 15px;
             line-height: 1.3;
         }
 
         .main-title .ampersand {
             color: var(--primary-gold);
             font-weight: 400;
-            text-shadow: 0 0 30px rgba(201, 160, 74, 0.4);
+            text-shadow: 0 0 30px rgba(201, 160, 74, 0.6);
         }
 
         .sub-title {
@@ -131,9 +130,9 @@
             font-weight: 400;
             letter-spacing: 8px;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 35px;
-            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 25px;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
             line-height: 1.8;
         }
 
@@ -142,10 +141,10 @@
             font-size: clamp(1.2rem, 2.5vw, 2.0rem);
             color: var(--primary-gold);
             letter-spacing: 8px;
-            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-            margin-top: 25px;
-            padding-top: 25px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         /* ===== COUNTDOWN SECTION ===== */
@@ -355,7 +354,7 @@
             line-height: 1.7;
         }
 
-        /* ===== GALLERY SECTION (VERTICAL & CENTER FOCUSED) ===== */
+        /* ===== GALLERY SECTION (VERTICAL FORMAT) ===== */
         .gallery-section {
             padding: 60px 20px 90px;
             background: var(--white);
@@ -373,7 +372,7 @@
 
         .gallery-card {
             width: 100%;
-            aspect-ratio: 3 / 4; /* Enforces vertical portrait orientation */
+            aspect-ratio: 3 / 4;
             border-radius: var(--border-radius);
             overflow: hidden;
             box-shadow: var(--shadow-sm);
@@ -493,18 +492,12 @@
                 background-attachment: scroll;
                 padding: 20px 20px 40px 20px;
                 background-size: 160%;
-                background-position: center center;
+                background-position: center 10%;
             }
 
             .hero-content {
-                padding: 40px 25px;
-                margin: 0 15px;
-                transform: translateY(-20px); 
-            }
-
-            @keyframes fadeInUp {
-                from { opacity: 0; transform: translateY(10px); }
-                to { opacity: 1; transform: translateY(-20px); }
+                padding: 20px 15px;
+                margin: 0;
             }
 
             .countdown-container { gap: 15px; }
@@ -525,7 +518,7 @@
 </head>
 <body>
     <div class="app">
-        <!-- ===== HERO SECTION ===== -->
+        <!-- ===== HERO SECTION (LOWER ALIGNED) ===== -->
         <header class="hero-section">
             <div class="hero-content">
                 <h1 class="main-title">Nayana <span class="ampersand">&amp;</span> Abhinav</h1>
@@ -579,7 +572,7 @@
             </div>
         </section>
 
-        <!-- ===== PHOTO GALLERY SECTION (VERTICAL FORMAT) ===== -->
+        <!-- ===== PHOTO GALLERY SECTION ===== -->
         <section class="gallery-section">
             <h2 class="section-title">Memories</h2>
             <div class="gallery-container">
